@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function page() {
@@ -23,8 +24,12 @@ function page() {
         <p className="text-lg mb-4">DESIGN * DEVELOPMENT * BRANDING</p>
         <h1 className="text-6xl font-bold mb-4">CREATIVE & EXPERIENCED</h1>
         <p className="text-xl mb-8">We are the one of the world's top creative design agencies</p>
+
         <div className="flex space-x-4">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">LIKE</button>
+          <Link href='/products'>
+        
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Products</button>
+          </Link>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">SHARE</button>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">SUBSCRIBE</button>
         </div>
