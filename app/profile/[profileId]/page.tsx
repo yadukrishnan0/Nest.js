@@ -6,6 +6,7 @@ import React from 'react'
 function  ProfileId({params}:paramsType) {
     const id:number =parseInt(params.profileId)
     const product =products.filter((product )=>{return product.id == id})
+    
   return (
     <div>
    <div>{product[0].id}</div>
